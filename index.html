@@ -28,6 +28,7 @@
 			background-color: white;
 			font-family: "Trebuchet MS";
 			padding: 10%;
+			position: relative;
 		}
 		
 		#container h1 {
@@ -60,6 +61,19 @@
 			margin-top:50px;
 			cursor: pointer;
 		}
+		
+		#container .author {
+			position:absolute;
+			bottom:20px;
+			right:20px;
+			margin:0;
+			padding:0;
+		}
+		
+		.author a {
+			text-decoration: none;
+			color:rgb(0, 0, 250);
+		}
 	</style>
 	
 	<script>
@@ -73,8 +87,9 @@
 		<a class="button" onclick="process(trump_text, true);">Generate Paragraph</a>
 		<a onclick="if (!info){$('.info').css('display', 'block');info=true;}else{$('.info').css('display', 'none');info=false;}" class="about">What is this?</a>
 		<p class="info">
-			This is a generator that generates sentences or paragraphs that sound like what Trump would say. The program uses javascript and natural language processing along with an input text to determine each sentence. <b>Keep in Mind:</b> Some of these sentences don't make grammatical sense.<br><br><b>Input Text:</b> <a href="https://raw.githubusercontent.com/hagarwa3/chatbot/gh-pages/trump.txt">https://raw.githubusercontent.com/hagarwa3/chatbot/gh-pages/trump.txt"</a>
+			This is a generator that generates sentences or paragraphs that sound like what Trump would say. The program uses javascript and natural language processing along with an input text to determine each sentence. <b>Keep in Mind:</b> Some of these sentences don't make grammatical sense.<br><br><b>Input Text:</b> <a href="https://raw.githubusercontent.com/hagarwa3/chatbot/gh-pages/trump.txt">https://raw.githubusercontent.com/hagarwa3/chatbot/gh-pages/trump.txt</a>
 		</p>
+		<p class="author">By <a href="https://github.com/MattCorrigan">Matt Corrigan</a></p>
 	</div>
 	
 	<script>
